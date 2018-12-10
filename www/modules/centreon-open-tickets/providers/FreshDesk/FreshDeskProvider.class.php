@@ -24,9 +24,10 @@ class FreshDeskProvider extends AbstractProvider {
 
  const FRESHDESK_LIST_PRIORITY = 7;
     protected $_close_advanced = 1;
+
 protected function _setDefaultValueMain($body_html = 0) {
 
-    parent::_setDefaultValueMain(1);
+  parent::_setDefaultValueMain($body_html);
 
   $this->default_data['url'] = 'https://{$freshdesk_domain}.freshdesk.com/a/tickets/{$ticket_id}';
 
