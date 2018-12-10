@@ -1,0 +1,31 @@
+<tr class="list_lvl_1">
+    <td class="ListColLvl1_name" colspan="2">
+        <h4>{$header.freshdesk}</h4>
+    </td>
+    <tr class="list_one">
+        <td class="FormRowField">
+            {$form.freshdesk_domain.label}
+        </td>
+        <td class="FormRowValue">
+            {$form.freshdesk_domain.html}
+        </td>
+    </tr>
+    <tr class="list_one">
+        <td class="FormRowField">
+            {$form.freshdesk_apikey.label}
+        </td>
+        <td class="FormRowValue">
+            {$form.freshdesk_apikey.html}
+        </td>
+    </tr>
+    <tr class="list_one">
+        <td class="FormRowField">
+            {$form.mappingticket.label}
+        </td>
+        <td class="FormRowValue">
+                {include file="file:$centreon_open_tickets_path/providers/Abstract/templates/clone.ihtml" cloneId="mappingTicket" cloneSet=$form.mappingTicket}
+        </td>
+    </tr>
+
+
+
